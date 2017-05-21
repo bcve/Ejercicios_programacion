@@ -1,0 +1,6 @@
+# a commment - esto es ignorado ya que tiene la almoadilla
+*.a    # no rastreara archivos .a
+!lib.a   # pero si rastera lib.a aunque se este ignorando todos los archivos .a es decir exception
+/TODO # solo ignora el archivo raiz TODO, pero no sus subdirectorios subdir/TODO
+build/ #ignora todos los archibos en el directorio build/
+doc/*.txt #ignora doc/notes.txt pero no doc/server/arch.txt
