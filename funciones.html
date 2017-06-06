@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>uso de funciones</title>
+</head>
+<body>
+<script type="text/javascript">
+	function di_hola(){
+		alert("say hello");
+	}
+
+	function cubo (x){
+		alert(x*x*x);
+	}
+	var medida = 3;
+	var base = 4;
+	var altura = 2;
+
+	function area (a,b){
+		document.write(a*b);
+	}
+
+	function statusNoton(botonId,botonNombre,botonValor)
+	{
+		var botonid = botonId + "\n";
+		var botonnombre = botonNombre + "\n";
+		var botonvalor = botonValor + "\n";
+		alert(botonId + botonnombre + botonvalor);
+	}
+var y = pi(3.1416);
+	function pi(x){
+		return x;
+	}
+
+	function areaCirculo(z){
+		this.z = z;
+
+		return 3.1416*(z*z);
+
+	}
+
+	var primer_valor = areaCirculo(3);
+
+
+
+
+</script>
+<input type="button" value="area de circulo" onclick="alert('el radio del circulo es ' + z + ' y su area es ' + primer_valor)">
+<input type="button" name="soy un boton" id="soy un id del boton" value="analizame" onclick="statusNoton(this.id,this.name,this.value)">
+
+<input type="button" name="" onclick="document.write(pi(y))" value="Valor de pi">
+
+<input type="button" name="soy el hijo de analizame" id="boton2" value="no me toques" onclick="statusNoton(this.id,this.name,this.value)">
+
+<input type="button" name="yo soy el ultimo boton" id="soy el numero 3" value="yo soy el repuesto" onclick="statusNoton(this.id,this.name,this.value)">
+
+<input type="button" onclick="cubo(medida)" name="" value="Volumen">
+<input type="button" name="" value="Area" onclick="area(base,altura)">
+
+<input type="button" onclick="di_hola()" name="" value="Pulsame">
+</body>
+</html>
